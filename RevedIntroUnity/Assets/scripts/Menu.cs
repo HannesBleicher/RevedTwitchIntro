@@ -22,7 +22,7 @@ public class Menu : MonoBehaviour
     public Slider SliderMusic;
     public int MusicOn;
     public GameObject Music;
-    
+
     // Start is called before the first frame update
     void Start()
     {

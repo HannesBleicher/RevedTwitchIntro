@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class MovePlattform : MonoBehaviour
 {
@@ -18,6 +20,10 @@ public class MovePlattform : MonoBehaviour
 
     public bool Move;
 
+    private Vector3 Target;
+    private Vector3 velocity = Vector3.zero;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +33,9 @@ public class MovePlattform : MonoBehaviour
 
         TargetPosition = TargetPosition + StartPos;
 
-        speed = Random.Range(0.06f, 0.25f);
+        speed = Random.Range(0.03f, 0.15f);
+        
+        
         
         if(Random.Range(-1.0f, 1.0f) >= 0)
         {
@@ -37,16 +45,28 @@ public class MovePlattform : MonoBehaviour
         {
             Dirrection = -1;
         }
+
+        StartCoroutine(moveTarget());
     }
 
     // Update is called once per frame
     void Update()
     {
 
+
+
+    }
+
+    private void FixedUpdate()
+    {
         if (Move)
         {
-            transform.position = Vector3.MoveTowards(transform.position, TargetPosition, speed * Time.deltaTime);
+            //Target = Vector3.MoveTowards(transform.position, TargetPosition, speed * Time.deltaTime);
+            
+            //transform.position = Vector3.MoveTowards(transform.position, TargetPosition, speed * Time.deltaTime);
 
+            transform.position =    transform.position = Vector3.SmoothDamp(transform.position, Target, ref velocity, 0.8f);
+            
             if (Vector3.Distance(transform.position, TargetPosition) < 0.1)
             {
                 if (Dirrection == 1)
@@ -65,7 +85,15 @@ public class MovePlattform : MonoBehaviour
             }
         }
 
+    }
 
+    private IEnumerator moveTarget()
+    {
+        while (Move)
+        {
+            Target = Vector3.MoveTowards(transform.position, TargetPosition, speed * 0.5f);
+            yield return new WaitForSeconds(0.5f);
+        }
     }
     
 

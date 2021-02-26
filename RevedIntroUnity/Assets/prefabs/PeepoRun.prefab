@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7731999529580139443}
   - component: {fileID: 877979305450753270}
   - component: {fileID: 5397547182288434036}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player_name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sample text
+  m_text: sgfdfg
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2c3e2c6eff575d9419a772f570746872, type: 2}
   m_sharedMaterial: {fileID: -2240797116774018327, guid: 2c3e2c6eff575d9419a772f570746872, type: 2}
@@ -125,11 +125,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.6
+  m_fontSize: 21.25
   m_fontSizeBase: 18.6
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 6
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 4
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 76128733712270925}
   - component: {fileID: 1068419383051495636}
   - component: {fileID: 1339648702}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PeepoRun
   m_TagString: peepo
   m_Icon: {fileID: 0}
