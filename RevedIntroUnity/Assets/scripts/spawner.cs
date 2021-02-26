@@ -19,7 +19,7 @@ public class spawner : MonoBehaviour
 
     public void Spawn(string username)
     {
-        if (Random.Range(0.0f, 4.0f) < 3.7f)
+        if (Random.Range(0.0f, 4.0f) < 3.8f)
         {
             GameObject player;
             player = Instantiate(peepo, transform.position, quaternion.identity);

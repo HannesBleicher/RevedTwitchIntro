@@ -16,7 +16,7 @@ public class MovePlattform : MonoBehaviour
     private Vector3 TargetPosition;
 
 
-    [SerializeField] private bool Move;
+    public bool Move;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +27,7 @@ public class MovePlattform : MonoBehaviour
 
         TargetPosition = TargetPosition + StartPos;
 
-        speed = Random.Range(0.11f, 0.33f);
+        speed = Random.Range(0.06f, 0.25f);
         
         if(Random.Range(-1.0f, 1.0f) >= 0)
         {
