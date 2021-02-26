@@ -5,10 +5,12 @@ ScriptsOnlyBuild:
     - Menu
     - MovePlattform
     - SaveNames
+    - SceneSpawning
     - TwitchChat
     - TwitchIRC
     - backgroundScaler
     - peepo
+    - peepoClown
     - spawner
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -35,6 +37,15 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshPro
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
+    - UnityEditor.Graphs.ParameterControllerEditor
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -79,6 +90,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -114,25 +129,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3460}
     - Class: 114
-      Script: {instanceID: 3610}
+      Script: {instanceID: 3490}
     - Class: 114
-      Script: {instanceID: 3652}
+      Script: {instanceID: 3612}
     - Class: 114
-      Script: {instanceID: 4098}
+      Script: {instanceID: 3654}
     - Class: 114
-      Script: {instanceID: 4156}
+      Script: {instanceID: 4100}
     - Class: 114
-      Script: {instanceID: 4272}
+      Script: {instanceID: 4158}
     - Class: 114
-      Script: {instanceID: 4276}
+      Script: {instanceID: 4274}
     - Class: 114
-      Script: {instanceID: 4584}
+      Script: {instanceID: 4278}
     - Class: 114
-      Script: {instanceID: 4612}
+      Script: {instanceID: 4586}
     - Class: 114
-      Script: {instanceID: 4862}
+      Script: {instanceID: 4614}
     - Class: 114
-      Script: {instanceID: 5058}
+      Script: {instanceID: 4864}
+    - Class: 114
+      Script: {instanceID: 5060}
+    - Class: 114
+      Script: {instanceID: 23966}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -524,7 +543,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: e526dc19c058bd35a83a0dfdcee65492
+      Hash: 6b873062c6ee7656076ecac36c85c58f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Menu
@@ -552,6 +571,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
+  - hash:
+      serializedVersion: 2
+      Hash: b93e8573bd1bd0da152bc69cc3365c16
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: peepoClown
   - hash:
       serializedVersion: 2
       Hash: 3cae62e09a50c5d5aae8d0536b3d8fde
@@ -608,7 +633,7 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
-      Hash: 58633266246cb883c34ab7161eddda67
+      Hash: e3aadc243412e22aeb6b7076c35dcc2f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: spawner
@@ -930,7 +955,13 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextEventCheck
+  - hash:
+      serializedVersion: 2
+      Hash: a60cbba065830815dc1f6a33d83ed2d5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneSpawning
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/Reved/builds/004/RevedIntro.exe
+  playerPath: D:/Reved/builds/004/Reved Intro.exe

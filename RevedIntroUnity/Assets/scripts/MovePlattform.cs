@@ -49,13 +49,6 @@ public class MovePlattform : MonoBehaviour
         StartCoroutine(moveTarget());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-
-
-    }
 
     private void FixedUpdate()
     {
