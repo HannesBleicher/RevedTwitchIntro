@@ -54,7 +54,7 @@ public class peepoClown : MonoBehaviour
         {
             if (!hitDown.collider.CompareTag("peepo"))
             {
-                if (Vector2.Distance(transform.position, hitDown.point) < 0.8f)
+                if (Vector2.Distance(transform.position, hitDown.point) < 0.6f)
                 {
                     grounded = true;
                 }

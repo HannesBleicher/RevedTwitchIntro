@@ -30,7 +30,7 @@ public class SceneSpawning : MonoBehaviour
         Instantiate(Ground1, new Vector3(8.5f, -3.7f, 0), Quaternion.identity);
         Instantiate(Ground1, new Vector3(-8.5f, -3.7f, 0), Quaternion.identity);
         
-        SpawnGround001(new Vector2(0,-3.5f));
+        SpawnGround001(new Vector2(-0.2f,-3.5f));
         SpawnGround001(new Vector2(4,-3.5f));
         SpawnGround001(new Vector2(-4.6f,-3.5f));
     }
@@ -41,7 +41,7 @@ public class SceneSpawning : MonoBehaviour
         Instantiate(Ground2, new Vector3(8.5f, -3.7f, 0), Quaternion.identity);
         Instantiate(Ground2, new Vector3(-8.5f, -3.7f, 0), Quaternion.identity);
         
-        SpawnGround002(new Vector2(0,-3.5f));
+        SpawnGround002(new Vector2(-0.2f,-3.5f));
         SpawnGround002(new Vector2(4,-3.5f));
         SpawnGround002(new Vector2(-4.6f,-3.5f));
     }
@@ -134,11 +134,11 @@ public class SceneSpawning : MonoBehaviour
         if (random == 5)
         {
             GameObject obj1;
-            obj1 = Instantiate(Cactus, new Vector3(pos.x + Random.Range(-1.0f,1.0f), pos.y + 1.3f,0), Quaternion.identity);
+            obj1 = Instantiate(Cactus, new Vector3(pos.x + Random.Range(0.4f,1.0f), pos.y + 1.3f,0), Quaternion.identity);
             obj1.transform.parent = ground.transform;
             
             GameObject obj2;
-            obj2 = Instantiate(Cactus, new Vector3(pos.x + Random.Range(-1.0f,1.0f), pos.y + 1.1f,0), Quaternion.identity);
+            obj2 = Instantiate(Cactus, new Vector3(pos.x + Random.Range(0.3f,-1.0f), pos.y + 1.1f,0), Quaternion.identity);
             obj2.transform.parent = ground.transform;
         }
 

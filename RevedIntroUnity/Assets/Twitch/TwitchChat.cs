@@ -61,7 +61,7 @@ public class TwitchChat : MonoBehaviour
 
         if (allowSpwn)
         {
-            if (menu.SliderAllowAgain == 0)
+            if (menu.SliderAllowAgain == 0 && UserName.Length < 25)
             {
                 Spawner.Spawn(UserName);
                 allowSpwn = false;
@@ -69,7 +69,7 @@ public class TwitchChat : MonoBehaviour
             }
             else
             {
-                if (!names.IsUsed(UserName))
+                if (!names.IsUsed(UserName) && UserName.Length < 25)
                 {
                     Spawner.Spawn(UserName);
                     allowSpwn = false;

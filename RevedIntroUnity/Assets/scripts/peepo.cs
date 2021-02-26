@@ -54,7 +54,7 @@ public class peepo : MonoBehaviour
         {
             if (!hitDown.collider.CompareTag("peepo"))
             {
-                if (Vector2.Distance(transform.position, hitDown.point) < 0.4f)
+                if (Vector2.Distance(transform.position, hitDown.point) < 0.6f)
                 {
                     grounded = true;
                 }
@@ -76,7 +76,7 @@ public class peepo : MonoBehaviour
         if (hit.collider != null)
         {
             float Dis = Vector2.Distance(transform.position, hit.point);
-            if (Dis > 0.5f)
+            if (Dis > 0.8f)
             {
                 Jump();
             }
