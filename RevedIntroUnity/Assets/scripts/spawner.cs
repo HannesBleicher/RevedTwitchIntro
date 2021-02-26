@@ -15,12 +15,7 @@ public class spawner : MonoBehaviour
     {
         Application.runInBackground = true;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void Spawn(string username)
     {
