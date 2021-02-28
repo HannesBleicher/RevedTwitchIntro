@@ -132,7 +132,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.088, y: -0.28}
-  m_SizeDelta: {x: 3.3424, y: 0.4078}
+  m_SizeDelta: {x: 4, y: 0.4078}
   m_Pivot: {x: 1, y: -1}
 --- !u!23 &2441006374732979034
 MeshRenderer:
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sample fbcb
+  m_text: _asdfghjklasdfghjkhv
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2c3e2c6eff575d9419a772f570746872, type: 2}
   m_sharedMaterial: {fileID: -2240797116774018327, guid: 2c3e2c6eff575d9419a772f570746872, type: 2}
@@ -222,10 +222,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 2
-  m_fontSizeBase: 36
+  m_fontSize: 1.5
+  m_fontSizeBase: 1.5
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 1
   m_fontSizeMax: 2
   m_fontStyle: 0

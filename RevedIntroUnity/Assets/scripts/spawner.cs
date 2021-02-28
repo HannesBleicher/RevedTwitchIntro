@@ -23,12 +23,15 @@ public class spawner : MonoBehaviour
         {
             GameObject player;
             player = Instantiate(peepo, transform.position, quaternion.identity);
+            player.GetComponent<peepo>().PlayetNameText.maxVisibleLines = 1;
             player.GetComponent<peepo>().PlayetNameText.text = username;
+            
         }
         else
         {
             GameObject player;
             player = Instantiate(peepoClown, transform.position, quaternion.identity);
+            player.GetComponent<peepoClown>().PlayetNameText.maxVisibleLines = 1;
             player.GetComponent<peepoClown>().PlayetNameText.text = username;
         }
 

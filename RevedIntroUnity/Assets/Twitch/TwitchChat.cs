@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class TwitchChat : MonoBehaviour
 {
@@ -61,20 +62,40 @@ public class TwitchChat : MonoBehaviour
 
         if (allowSpwn)
         {
-            if (menu.SliderAllowAgain == 0 && UserName.Length < 25)
+            if (menu.SliderAllowAgain == 0)
             {
-                Spawner.Spawn(UserName);
-                allowSpwn = false;
-                StartCoroutine(waitTime());
-            }
-            else
-            {
-                if (!names.IsUsed(UserName) && UserName.Length < 25)
+                if (UserName.Length < 15)
                 {
                     Spawner.Spawn(UserName);
                     allowSpwn = false;
-                    names.AddName(UserName);
                     StartCoroutine(waitTime());
+                }
+
+                if (UserName.Length > 16 && UserName.Length < 25 && Random.Range(1, 10) < 3)
+                {
+                    Spawner.Spawn(UserName);
+                    allowSpwn = false;
+                    StartCoroutine(waitTime());
+                }
+
+            }
+            else
+            {
+                if (!names.IsUsed(UserName))
+                {
+                    if (UserName.Length < 15)
+                    {
+                        Spawner.Spawn(UserName);
+                        allowSpwn = false;
+                        StartCoroutine(waitTime());
+                    }
+
+                    if (UserName.Length > 16 && UserName.Length < 25 && Random.Range(1, 10) < 3)
+                    {
+                        Spawner.Spawn(UserName);
+                        allowSpwn = false;
+                        StartCoroutine(waitTime());
+                    }
                 }
                 else
                 {
@@ -85,6 +106,7 @@ public class TwitchChat : MonoBehaviour
 
         }
     }
+    
 
 
     private IEnumerator waitTime()

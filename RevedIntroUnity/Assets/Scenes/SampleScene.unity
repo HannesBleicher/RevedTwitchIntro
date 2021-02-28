@@ -1677,7 +1677,7 @@ MonoBehaviour:
   details:
     oauth: oauth:dvmsjsvxo0tedrfntcjbvs1ak04doh
     nick: reved_bot
-    channel: bastighg
+    channel: xqcow
   userChatter:
     login: 
     channel: 
@@ -3860,14 +3860,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2441006374732979035, guid: cc2aa2f273e745347a168e4c05aebf1b, type: 3}
-      propertyPath: m_text
-      value: asdfghjklasdfghjkhv
-      objectReference: {fileID: 0}
-    - target: {fileID: 2441006374732979035, guid: cc2aa2f273e745347a168e4c05aebf1b, type: 3}
-      propertyPath: m_fontSize
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc2aa2f273e745347a168e4c05aebf1b, type: 3}
 --- !u!1001 &4967008497021241876
@@ -3877,10 +3869,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4967008495505923450, guid: 356b5699de8906f4eabdf252c3321b6c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 3.2521
-      objectReference: {fileID: 0}
     - target: {fileID: 4967008496376484320, guid: 356b5699de8906f4eabdf252c3321b6c, type: 3}
       propertyPath: m_Name
       value: PlayerClown
