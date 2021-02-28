@@ -479,3 +479,26 @@ System memory in use after: 88.1 MB.
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2365.
 Total: 2.378100 ms (FindLiveObjects: 0.229300 ms CreateObjectMapping: 0.042900 ms MarkObjects: 1.991600 ms  DeleteObjects: 0.112700 ms)
 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 51.9 MB.
+System memory in use after: 51.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2365.
+Total: 2.198600 ms (FindLiveObjects: 0.239200 ms CreateObjectMapping: 0.042400 ms MarkObjects: 1.801700 ms  DeleteObjects: 0.113900 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.01 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 51.9 MB.
+System memory in use after: 51.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2365.
+Total: 23.371200 ms (FindLiveObjects: 1.909000 ms CreateObjectMapping: 0.084900 ms MarkObjects: 21.141700 ms  DeleteObjects: 0.232400 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
